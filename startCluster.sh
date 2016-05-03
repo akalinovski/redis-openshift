@@ -3,6 +3,8 @@
 # Create a bootstrap master
 openshift cli create -f redis-master.yaml
 
+openshift cli create -f redis-master-service.yaml
+
 # Create a service to track the sentinels
 openshift cli create -f redis-sentinel-service.yaml
 
